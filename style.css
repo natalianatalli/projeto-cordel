@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --fonte-padrao: Verdana, sans-serif; 
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-destaque: Sriracha, serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps; /*Deixa todas as letras maiscúlas, porém, aquela que estiver maiúscula no h1 ficará maior*/
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+header a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--fonte-padrao);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte-destaque);
+    font-size: 3.5vw;
+    padding-left: 30px;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-attachment: fixed;
+    background-color: black;
+    box-shadow: inset 10px 10px 11px rgba(0, 0, 0, 0.205);
+    background-size: cover;
+    color: white;
+}
+
+section.imagem > p {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    display: inline-block; /*efeito parallax*/
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 5px;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+}
