@@ -48,13 +48,6 @@ body {
     font-family: var(--fonte-padrao);
 }
 
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
 section {
     font-family: var(--fonte-destaque);
     font-size: 3.5vw;
@@ -95,6 +88,14 @@ section#img01 {
 
 section#img02 {
     background-image: url(imagens/background002.jpg);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
 }
 
 footer a {
