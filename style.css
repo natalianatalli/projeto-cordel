@@ -13,7 +13,7 @@
 :root {
     --fonte-padrao: Verdana, sans-serif; 
     --fonte-titulo: 'Passion One', cursive;
-    --fonte-destaque: Sriracha, serif;
+    --fonte-destaque: 'Sriracha', cursive;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 
 h1 {
     font-family: var(--fonte-titulo);
-    font-size: 10vw;
+    font-size: 10vw; /*VW é para mudar o tamanho de acordo com o tamanho da tela*/
     padding-top: 50px;
     font-variant: small-caps; /*Deixa todas as letras maiscúlas, porém, aquela que estiver maiúscula no h1 ficará maior*/
 }
@@ -67,7 +67,7 @@ section.normal {
 }
 
 section.imagem {
-    background-attachment: fixed;
+    background-attachment: fixed; /*efeito parallax*/
     background-color: black;
     box-shadow: inset 10px 10px 11px rgba(0, 0, 0, 0.205);
     background-size: cover;
@@ -76,7 +76,7 @@ section.imagem {
 
 section.imagem > p {
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    display: inline-block; /*efeito parallax*/
+    display: inline-block; /*caixa que se adapta ao tamanho do conteúdo*/
     background-color: rgba(0, 0, 0, 0.432);
     padding: 5px;
 }
